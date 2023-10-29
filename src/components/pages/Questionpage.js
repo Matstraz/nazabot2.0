@@ -28,9 +28,15 @@ export default function Questionpage() {
       setAnswer("DOVRESTI SCRIVERE QUALCOSA");
     }
     if (question.includes("NINO") || question.includes("SARDINA")) {
-      setAnswer("CONTIENE NINONE");
+      setAnswer(
+        "NINONE E' LA MASSIMA AUTORITA' IN TERMINI DI BAGHERIA E DI GOBLINS (NON RISERVERO' PAROLE PER MACACO)"
+      );
     } else if (question.includes("CRIVELLO")) {
-      setAnswer("CONTIENE CRIVELLO");
+      setAnswer(
+        `IL CRIVELLO, MEGLIO NOTO COME "CRIVLELO", E' UNO DEI PIU' IRRIVERENTI GICATORI DEL POOL PALERMITANO.
+        NON E' IN GRADO DI IDEARE UN MAZZO E PER QUESTO SI LIMITA A COPIARE INDEGNAMENTE LE LISTE PIU' RIDICOLE SULLA RETE,
+         MANTENDENSOSI UN GIOCATORE DAL LIVELLO DI PREPARAZIONE MEDIO/ALTO. COME SE NON BASTASSE, NON HA UN MINIMO DI CULTURA CINEMATOGRAFICA`
+      );
     } else if (question.includes("ASD")) {
       setAnswer("CONTIENE ASD");
     } else {
