@@ -35,7 +35,7 @@ export default function Questionpage() {
       setAnswer(
         `IL CRIVELLO, MEGLIO NOTO COME "CRIVLELO", E' UNO DEI PIU' IRRIVERENTI GICATORI DEL POOL PALERMITANO.
         NON E' IN GRADO DI IDEARE UN MAZZO E PER QUESTO SI LIMITA A COPIARE INDEGNAMENTE LE LISTE PIU' RIDICOLE SULLA RETE,
-         MANTENDENSOSI UN GIOCATORE DAL LIVELLO DI PREPARAZIONE MEDIO/ALTO. COME SE NON BASTASSE, NON HA UN MINIMO DI CULTURA CINEMATOGRAFICA`
+         MANTENDENSOSI UN GIOCATORE DAL LIVELLO DI PREPARAZIONE MEDIO/ALTO. COME SE NON BASTASSE, NON HA UN MINIMO DI CULTURA CINEMATOGRAFICA.`
       );
     } else if (question.includes("ASD")) {
       setAnswer("CONTIENE ASD");
@@ -88,7 +88,7 @@ export default function Questionpage() {
           className={
             !hideMe2
               ? "hidden"
-              : "bg-blue-900 text-slate-200 w-3/4 border border-blue-700 placeholder-slate-300 text-center text-xl silkWorm py-2"
+              : "bg-blue-900 text-slate-200 md:w-3/4 w-11/12 border border-blue-700 placeholder-slate-300 text-center text-xl silkWorm py-2"
           }
         >
           {answer}
