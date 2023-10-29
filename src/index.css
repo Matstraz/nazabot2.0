@@ -17,6 +17,11 @@
   src: url(./assets/fonts/Crackman.otf);
 }
 
+@font-face {
+  font-family: silkWorm;
+  src: url(./assets/fonts/Silkworm.ttf);
+}
+
 .discoDuckItalic {
   font-family: "discoDuckItalic";
 }
@@ -27,6 +32,10 @@
 
 .crackMan {
   font-family: "crackMan";
+}
+
+.silkWorm {
+  font-family: "silkWorm";
 }
 
 .backHome {
