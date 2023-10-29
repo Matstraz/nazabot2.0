@@ -2,27 +2,50 @@ import { useEffect, useState } from "react";
 
 export default function Questionpage() {
   const [hideMe2, setHideMe2] = useState(false);
-  const [answer, setAnswer] = useState("myAnswer");
+  const [answer, setAnswer] = useState("DOVRESTI SCRIVERE QUALCOSAE");
   const [question, setQuestion] = useState("");
 
   function inputHandle(e) {
-    setQuestion(e.target.value);
+    setQuestion(e.target.value.toUpperCase());
   }
 
   function answerMe(e) {
     e.preventDefault();
+    if (question === "" || question === " ") {
+      setAnswer("DOVRESTI SCRIVERE QUALCOSA");
+    }
     setHideMe2(true);
   }
 
+  function reset() {
+    setHideMe2(false);
+    setQuestion("");
+    setAnswer("DOVRESTI SCRIVERE QUALCOSA");
+  }
+
   useEffect(() => {
-    question.includes("nino") && setAnswer(" CONTIENE NINONE");
-    /* question.includes("nino") && setAnswer("contiene NINONE");  */
-    /* question.includes("nino") && setAnswer("contiene NINONE");  */
-    /* question.includes("nino") && setAnswer("contiene NINONE");  */
-    /* question.includes("nino") && setAnswer("contiene NINONE");  */
-    /* question.includes("nino") && setAnswer("contiene NINONE");  */
-    /* question.includes("nino") && setAnswer("contiene NINONE");  */
-    /* question.includes("nino") && setAnswer("contiene NINONE");  */
+    if (question === "") {
+      setAnswer("DOVRESTI SCRIVERE QUALCOSA");
+    }
+    if (question.includes("NINO") || question.includes("SARDINA")) {
+      setAnswer("CONTIENE NINONE");
+    } else if (question.includes("CRIVELLO")) {
+      setAnswer("CONTIENE CRIVELLO");
+    } else if (question.includes("ASD")) {
+      setAnswer("CONTIENE ASD");
+    } else {
+      /* question.includes("nino") && setAnswer("contiene NINONE");  */
+      /* question.includes("nino") && setAnswer("contiene NINONE");  */
+      /* question.includes("nino") && setAnswer("contiene NINONE");  */
+      /* question.includes("nino") && setAnswer("contiene NINONE");  */
+      /* question.includes("nino") && setAnswer("contiene NINONE");  */
+      /* question.includes("nino") && setAnswer("contiene NINONE");  */
+      /* question.includes("nino") && setAnswer("contiene NINONE");  */
+      setAnswer(
+        "NONOSTANTE LA MIA NAVIGATA ESPERIENZA, NON CONOSCO QUESTO GIOCATORE"
+      );
+    }
+    console.log(question);
   }, [question]);
 
   return (
@@ -36,8 +59,8 @@ export default function Questionpage() {
       >
         <input
           type="text"
-          className="bg-blue-900 text-slate-200 w-3/4 border-blue-700 placeholder-slate-300 text-center"
-          placeholder="INTERROGAMI SU UN GIOCATORE"
+          className="bg-blue-900 text-slate-200 w-3/4 border-blue-700 placeholder-slate-300 text-center silkWorm"
+          placeholder="NOME GIOCATORE"
           value={question}
           onChange={inputHandle}
         ></input>
@@ -59,7 +82,7 @@ export default function Questionpage() {
           className={
             !hideMe2
               ? "hidden"
-              : "bg-blue-900 text-slate-200 w-3/4 border-blue-700 placeholder-slate-300 text-center text-xl silkWorm py-2"
+              : "bg-blue-900 text-slate-200 w-3/4 border border-blue-700 placeholder-slate-300 text-center text-xl silkWorm py-2"
           }
         >
           {answer}
@@ -71,6 +94,7 @@ export default function Questionpage() {
               ? "hidden"
               : "cursor-pointer crackMan text-2xl sm:text-3xl bg-blue-900 text-slate-200 w-4/5 sm:3/5 lg:w-2/5 border border-blue-700"
           }
+          onClick={reset}
         >
           FAI UN'ALTRA DOMANDA
         </button>
