@@ -2,6 +2,9 @@ import { css } from "aphrodite";
 import styles from "../utils/Animations";
 import { useState } from "react";
 import Questionpage from "./Questionpage";
+import invaders from "../../assets/pics/invaders.png";
+import spaceShip from "../../assets/pics/spaceship.png";
+import alien from "../../assets/pics/alien.png";
 
 export default function Homepage() {
   const [hideMe, setHideMe] = useState(false);
@@ -34,7 +37,7 @@ export default function Homepage() {
         ENTRA
       </button>
       {hideMe && <Questionpage />}
-      <div
+      {/*  <div
         className={
           hideMe
             ? "hidden"
@@ -60,733 +63,568 @@ export default function Homepage() {
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
       </div>
+      */}
       <div
         className={
           hideMe
             ? "hidden"
             : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+                styles.fadeInLeftSlow
+              )} w-full overflow-hidden flex justify-around items-center pt-3`
         }
       >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        <img src={spaceShip} alt="invaders" className="w-24" />
+        <img src={spaceShip} alt="invaders" className="w-24" />
       </div>
       <div
         className={
           hideMe
             ? "hidden"
             : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+                styles.fadeInRight
+              )} w-full overflow-hidden flex gap-8 mt-16`
         }
       >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+      </div>
       <div
         className={
           hideMe
             ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+            : `${css(styles.fadeInLeft)} w-full overflow-hidden flex gap-8 mt-3`
+        }
+      >
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+      </div>
+      <div
+        className={
+          hideMe
+            ? "hidden"
+            : "w-full h-8 overflow-hidden text-4xl text-slate-400"
         }
       >
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        - - - - - -
       </div>
       <div
         className={
           hideMe
             ? "hidden"
             : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+                styles.fadeInRight
+              )} w-full overflow-hidden flex gap-8 mt-5`
         }
       >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+      </div>
       <div
         className={
           hideMe
             ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+            : `${css(styles.fadeInLeft)} w-full overflow-hidden flex gap-8 mt-3`
+        }
+      >
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+      </div>
+      <div
+        className={
+          hideMe
+            ? "hidden"
+            : "w-full h-8 overflow-hidden text-4xl text-slate-400"
         }
       >
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        - - - - - -
       </div>
       <div
         className={
           hideMe
             ? "hidden"
             : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+                styles.fadeInRight
+              )} w-full overflow-hidden flex gap-8 mt-5`
         }
       >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+      </div>
       <div
         className={
           hideMe
             ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+            : `${css(styles.fadeInLeft)} w-full overflow-hidden flex gap-8 mt-3`
+        }
+      >
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+      </div>
+      <div
+        className={
+          hideMe
+            ? "hidden"
+            : "w-full h-8 overflow-hidden text-4xl text-slate-400"
         }
       >
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        - - - - - -
       </div>
       <div
         className={
           hideMe
             ? "hidden"
             : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+                styles.fadeInRight
+              )} w-full overflow-hidden flex gap-8 mt-5`
         }
       >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+      </div>
       <div
         className={
           hideMe
             ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+            : `${css(styles.fadeInLeft)} w-full overflow-hidden flex gap-8 mt-3`
+        }
+      >
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+      </div>
+      <div
+        className={
+          hideMe
+            ? "hidden"
+            : "w-full h-8 overflow-hidden text-4xl text-slate-400"
         }
       >
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        - - - - - -
       </div>
       <div
         className={
           hideMe
             ? "hidden"
             : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
                 styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+              )} w-full overflow-hidden flex gap-8 mt-5`
         }
       >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
+        <img src={invaders} alt="invaders" className="w-12" />
       </div>
       <div
         className={
           hideMe
             ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+            : `${css(styles.fadeInLeft)} w-full overflow-hidden flex gap-8 mt-3`
         }
       >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
+        <img src={alien} alt="invaders" className="w-12" />
       </div>
       <div
         className={
           hideMe
             ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
+            : "w-full h-8 overflow-hidden text-4xl text-slate-400"
         }
       >
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>{" "}
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        - - - - - -
       </div>
     </div>
   );

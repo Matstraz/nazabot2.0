@@ -8,13 +8,17 @@ const styles = StyleSheet.create({
   },
   fadeInRight: {
     animationName: fadeInRight,
-    animationDuration: "3s",
+    animationDuration: "3.5s",
     animationIterationCount: "infinite",
   },
   fadeInLeft: {
     animationName: fadeInLeft,
-    animationDuration: "3s",
+    animationDuration: "3.5s",
     animationIterationCount: "infinite",
+  },
+  fadeInLeftSlow: {
+    animationName: fadeInLeft,
+    animationDuration: "6s",
   },
 });
 
