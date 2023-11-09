@@ -32,6 +32,7 @@ export default function Mario() {
       <Link
         to="/"
         className="border-2 border-myBlue-200 px-5 py-1 rounded-md text-white bg-black bg-opacity-80 hover:text-slate-400 discoDuckItalic2"
+        onClick={() => localStorage.clear()}
       >
         Back to Homepage
       </Link>
