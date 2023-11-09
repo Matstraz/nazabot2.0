@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Questionpage() {
   const [hideMe2, setHideMe2] = useState(false);
   const [answer, setAnswer] = useState("DOVRESTI SCRIVERE QUALCOSAE");
   const [question, setQuestion] = useState("");
+  let navigate = useNavigate();
 
   function inputHandle(e) {
     setQuestion(e.target.value.toUpperCase());
@@ -11,9 +13,12 @@ export default function Questionpage() {
 
   function answerMe(e) {
     e.preventDefault();
-    if (question === "" || question === " ") {
-      setAnswer("DOVRESTI SCRIVERE QUALCOSA");
+    /*NAVIGATE TO PROTECTED AREA*/
+    if (question === "NAZARENO PARLATO ROVELLA") {
+      localStorage.setItem("nazaBot", "nazaBot");
+      navigate("/mario");
     }
+    /*SHOW ANSWER*/
     setHideMe2(true);
   }
 
@@ -24,7 +29,7 @@ export default function Questionpage() {
   }
 
   useEffect(() => {
-    if (question === "") {
+    if (question === "" || question === " ") {
       setAnswer("DOVRESTI SCRIVERE QUALCOSA");
     }
     if (question.includes("NINO") || question.includes("SARDINA")) {
@@ -93,7 +98,7 @@ export default function Questionpage() {
         >
           {answer}
         </div>
-        {/* settare reset */}
+        {/* RESET */}
         <button
           className={
             !hideMe2

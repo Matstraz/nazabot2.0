@@ -37,33 +37,6 @@ export default function Homepage() {
         ENTRA
       </button>
       {hideMe && <Questionpage />}
-      {/*  <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInRight
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      <div
-        className={
-          hideMe
-            ? "hidden"
-            : `${css(
-                styles.fadeInLeft
-              )} w-full h-8 overflow-hidden text-4xl text-slate-400`
-        }
-      >
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      </div>
-      */}
       <div
         className={
           hideMe
