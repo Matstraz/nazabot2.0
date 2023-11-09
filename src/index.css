@@ -44,3 +44,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media screen and (max-width: 900px) and (min-width: 800px) {
+  .specialTranslate {
+    transform: translate(-50%, -20%);
+  }
+}
