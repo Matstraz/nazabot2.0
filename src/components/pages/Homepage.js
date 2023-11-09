@@ -21,7 +21,7 @@ export default function Homepage() {
         className={
           hideMe
             ? "hidden"
-            : "discoDuckItalic -skew-x-12 rounded-full text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 text-center z-50 text-white w-4/5 bg-black bg-opacity-70"
+            : "discoDuckItalic -skew-x-12 rounded-full text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 text-center z-50 text-white w-4/5 bg-black bg-opacity-80"
         }
       >
         nazabot 2.0
@@ -30,7 +30,7 @@ export default function Homepage() {
         className={
           hideMe
             ? "hidden"
-            : "discoDuckItalic2 rounded-full text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl absolute top-3/4 left-2/4 -translate-x-2/4 xl:-translate-y-3/4 -translate-y-32 lg:-translate-y-full text-center z-50 text-white w-2/5 lg:w-1/4 bg-black bg-opacity-70 specialTranslate"
+            : "discoDuckItalic2 rounded-full text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl absolute top-3/4 left-2/4 -translate-x-2/4 xl:-translate-y-3/4 -translate-y-32 lg:-translate-y-full text-center z-50 text-white w-2/5 lg:w-1/4 bg-black bg-opacity-80 specialTranslate"
         }
         onClick={() => setHideMe(true)}
       >

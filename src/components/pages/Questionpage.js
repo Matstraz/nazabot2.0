@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import icons from "../utils/Icons";
 
 export default function Questionpage() {
   const [hideMe2, setHideMe2] = useState(false);
+  const [hideMe104, setHideMe104] = useState(true);
   const [answer, setAnswer] = useState("DOVRESTI SCRIVERE QUALCOSAE");
   const [question, setQuestion] = useState("");
   let navigate = useNavigate();
@@ -14,25 +16,35 @@ export default function Questionpage() {
   function answerMe(e) {
     e.preventDefault();
     /*NAVIGATE TO PROTECTED AREA*/
-    if (question === "NAZARENO PARLATO ROVELLA") {
+    if (question.includes("MARIO")) {
       localStorage.setItem("nazaBot", "nazaBot");
       navigate("/mario");
     }
     /*SHOW ANSWER*/
     setHideMe2(true);
+    /*  ADD LINK TO 104 SITE */
+    if (
+      answer ===
+      "PER EVITARE DISAMBUIGUITA' SPECIFICA IL COGNOME O UTILIZZA IL SOPRANNOME DEL GIOCATORE. SE NONOSTANTE QUESTO NON RIUSCISSI A TROVARLO, ALLORA SIGNIFICA CHE NON SA TENERE LE CARTE IN MANO E PUOI RAGGIUNGERLO A QUESTO"
+    ) {
+      setHideMe104(false);
+    }
   }
-
+  /*RESET*/
   function reset() {
     setHideMe2(false);
     setQuestion("");
     setAnswer("DOVRESTI SCRIVERE QUALCOSA");
+    setHideMe104(true);
+    localStorage.clear();
   }
 
+  /*USEEFFECT TO SET ANSWER*/
   useEffect(() => {
     if (question === "" || question === " ") {
       setAnswer("DOVRESTI SCRIVERE QUALCOSA");
     }
-    if (question.includes("NINO") || question.includes("SARDINA")) {
+    if (question.includes("SARDINA") || question.includes("SARDINA")) {
       setAnswer(
         "NINONE E' LA MASSIMA AUTORITA' IN TERMINI DI BAGHERIA E DI GOBLINS (NON RISERVERO' PAROLE PER MACACO)"
       );
@@ -42,21 +54,12 @@ export default function Questionpage() {
         NON E' IN GRADO DI IDEARE UN MAZZO E PER QUESTO SI LIMITA A COPIARE INDEGNAMENTE LE LISTE PIU' RIDICOLE SULLA RETE,
          MANTENDENSOSI UN GIOCATORE DAL LIVELLO DI PREPARAZIONE MEDIO/ALTO. COME SE NON BASTASSE, NON HA UN MINIMO DI CULTURA CINEMATOGRAFICA.`
       );
-    } else if (question.includes("ASD")) {
-      setAnswer("CONTIENE ASD");
     } else {
       /* question.includes("nino") && setAnswer("contiene NINONE");  */
-      /* question.includes("nino") && setAnswer("contiene NINONE");  */
-      /* question.includes("nino") && setAnswer("contiene NINONE");  */
-      /* question.includes("nino") && setAnswer("contiene NINONE");  */
-      /* question.includes("nino") && setAnswer("contiene NINONE");  */
-      /* question.includes("nino") && setAnswer("contiene NINONE");  */
-      /* question.includes("nino") && setAnswer("contiene NINONE");  */
       setAnswer(
-        "NONOSTANTE LA MIA NAVIGATA ESPERIENZA, NON CONOSCO QUESTO GIOCATORE"
+        "PER EVITARE DISAMBUIGUITA' SPECIFICA IL COGNOME O UTILIZZA IL SOPRANNOME DEL GIOCATORE. SE NONOSTANTE QUESTO NON RIUSCISSI A TROVARLO, ALLORA SIGNIFICA CHE NON SA TENERE LE CARTE IN MANO E PUOI RAGGIUNGERLO A QUESTO"
       );
     }
-    console.log(question);
   }, [question]);
 
   return (
@@ -85,7 +88,7 @@ export default function Questionpage() {
       <div
         className={
           !hideMe2
-            ? "idden"
+            ? "hidden"
             : "flex flex-col gap-6 w-full justify-center items-center"
         }
       >
@@ -93,10 +96,26 @@ export default function Questionpage() {
           className={
             !hideMe2
               ? "hidden"
-              : "bg-blue-900 text-slate-200 md:w-3/4 w-11/12 border border-blue-700 placeholder-slate-300 text-center text-xl silkWorm py-2"
+              : "bg-blue-900 text-slate-200 md:w-3/4 w-11/12 border border-blue-700 placeholder-slate-300 text-center text-xl pressStart py-2"
           }
         >
-          {answer}
+          {hideMe2 && answer}
+          {/*   LINK TO 104 PAGE TO ADD JUST IN CASE OF UNKOWN PLAYER */}
+          {!hideMe104 && (
+            <div className="flex justify-center items-center gap-2">
+              {icons.right}
+              <p>
+                <a
+                  href="https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2023.09.permessi-legge-104-e-congedo-familiari-disabili-variazione-domanda.html"
+                  className="underline"
+                  onClick={() => setHideMe104(true)}
+                >
+                  LINK
+                </a>
+              </p>
+              {icons.left}
+            </div>
+          )}
         </div>
         {/* RESET */}
         <button

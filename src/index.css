@@ -18,6 +18,11 @@
 }
 
 @font-face {
+  font-family: pressStart;
+  src: url(./assets/fonts/PressStart.ttf);
+}
+
+@font-face {
   font-family: silkWorm;
   src: url(./assets/fonts/Silkworm.ttf);
 }
@@ -36,6 +41,10 @@
 
 .silkWorm {
   font-family: "silkWorm";
+}
+
+.pressStart {
+  font-family: "pressStart";
 }
 
 .backHome {
