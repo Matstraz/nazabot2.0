@@ -5,6 +5,7 @@ import icons from "../utils/Icons";
 export default function Questionpage() {
   const [hideMe2, setHideMe2] = useState(false);
   const [hideMe104, setHideMe104] = useState(true);
+  const [hideMePortfolio, setHideMePortfolio] = useState(true);
   const [answer, setAnswer] = useState("DOVRESTI SCRIVERE QUALCOSAE");
   const [question, setQuestion] = useState("");
   let navigate = useNavigate();
@@ -31,6 +32,13 @@ export default function Questionpage() {
     ) {
       setHideMe104(false);
     }
+    /*  ADD LINK TO PORTFOLIO */
+    if (
+      answer ===
+      "NON SONO IN GRADO DI FORNIRE UNN'OPINIONE CHIARA SU QUESTO GIOCATORE. PUOI TROVARE PIU' INFO"
+    ) {
+      setHideMePortfolio(false);
+    }
   }
   /*RESET*/
   function reset() {
@@ -38,6 +46,7 @@ export default function Questionpage() {
     setQuestion("");
     setAnswer("DOVRESTI SCRIVERE QUALCOSA");
     setHideMe104(true);
+    setHideMePortfolio(true);
     localStorage.clear();
   }
 
@@ -100,7 +109,7 @@ export default function Questionpage() {
       );
     } else if (question.includes("GIACALONE")) {
       setAnswer(
-        `GIACALONE HA VINTO UN TORNEO DEL VENERDI' E SI E' CONVINTO DI ESSERE UN PRO PLAYER. DEVE FARNE ANCORA MOLTA DI STRADA PRIMA DI RIUSCIRE A TENERE PIU' DI DUE CARTE IN MANO SENZA CHE CADANO DA SOLE.`
+        `GIACALONE HA VINTO UN TORNEO DEL VENERDI' E SI E' CONVINTO DI ESSERE UN PRO PLAYER. DEVE FARNE ANCORA MOLTA DI STRADA PRIMA DI RIUSCIRE A TENERE PIU' DI TRE CARTE IN MANO SENZA CHE CADANO DA SOLE. TRE, COME I MANA CHE RIESCE A PRODURRE CON BEN TRE LANDE: QUASI FENOMENO`
       );
     } else if (
       question.includes("CIX") ||
@@ -108,11 +117,11 @@ export default function Questionpage() {
       question.includes("ZUZZI")
     ) {
       setAnswer(
-        "'ZUZZI', ANCHE CONOSCIUTO COME 'PAICEN', ANCHE CONOSCIUTO COME 'CIX', E' UN GIOCATORE AMBIGUO COME I SUOI MAZZI CHE NON CONTENGONO MAI MENO DI 5 COLORI."
+        "'ZUZZI', ANCHE CONOSCIUTO COME 'PAICEN', ANCHE CONOSCIUTO COME 'CIX', E' UN GIOCATORE AMBIGUO COME I SUOI MAZZI CHE NON CONTENGONO MAI MENO DI 5 COLORI. E' IL DEGNO SOSTITUTO DI QUELLO SCALDA SCRIVANIE EMIGRATO A MILANO: IL TEMPO SI FERMA COME PER MAGIA."
       );
     } else if (question.includes("GIRESI") || question.includes("GIREX")) {
       setAnswer(
-        "HO SEMPRE REPUTATO IL GIREX IL PIU' BRAVO GIOCATORE DI PALERMO...DOPO DI ME. LA SUA ECCESSIVA ATTENZIONE PER UN FORMATO RIDICOLO COME IL PAUPER HA FATTO SI' CHE PERDESSE IL FOCUS SUL VERO MAGIC."
+        "HO SEMPRE REPUTATO IL GIREX IL PIU' BRAVO GIOCATORE DI PALERMO...DOPO DI ME. LA SUA ECCESSIVA ATTENZIONE PER UN FORMATO RIDICOLO COME IL PAUPER HA FATTO SI' CHE PERDESSE IL FOCUS SUL VERO MAGIC. FOCUS CHE RIESCE A MANTENERE PER TUTTO TRANNE PER CHI REALMENTE HA BISOGNO QUANDO NON RIESCE AD ENTRARE IN CAMERA DI ALBERGO: VASTASO."
       );
     } else if (question.includes("CUSUMANO")) {
       setAnswer(
@@ -127,11 +136,11 @@ export default function Questionpage() {
       question.includes("FILIPPO")
     ) {
       setAnswer(
-        "A MAZZARA DEL VALLO NON SONO ANCORA ARRIVATE LE PENNE A SFERA, VERAMENTE VUI CONOSCERE LA MIA OPINIONE SU QUESTO GIOCATORE?"
+        "A MAZZARA DEL VALLO NON SONO ANCORA ARRIVATE LE PENNE A SFERA, VERAMENTE VUI CONOSCERE LA MIA OPINIONE SU QUESTO INETTO ED INCAPACE GIOCATORE? BENE, ADESSO LA CONOSCI."
       );
     } else if (question.includes("BIF") || question.includes("BICA")) {
       setAnswer(
-        "IN 'BACK TO THE FUTURE' E' STATO UNO DEI MIEI INTERPRETI PREFERITI."
+        "IN 'BACK TO THE FUTURE' E' STATO UNO DEI MIEI INTERPRETI PREFERITI. DA LOSTWOOD HA IL CHIARO PIANO MALVAGIO DI METTERMI IN CATTIVA LUCE CON IL LUFOTECARIO DI FIDUCIA"
       );
     } else if (question.includes("BOSCO")) {
       setAnswer(
@@ -147,7 +156,7 @@ export default function Questionpage() {
       question.includes("NOBILE")
     ) {
       setAnswer(
-        "MI HANNO RACCONTATO CHE UNA VOLTA FOSSE IN GRADO DI GIOCARE A MTG. DOPO IL BAN DI MOX OPAL NON E' STATO PIU' LO STESSO."
+        "MI HANNO RACCONTATO CHE UNA VOLTA FOSSE IN GRADO DI GIOCARE A MTG. DOPO IL BAN DI MOX OPAL NON E' STATO PIU' LO STESSO. HA PROVATO A TIRARSI SU CON L'ARBITRAGGIO MA CON SCARSI RISULTATI."
       );
     } else if (question.includes("BELLOMIA") || question.includes("MACACO")) {
       setAnswer(
@@ -167,8 +176,34 @@ export default function Questionpage() {
       question.includes("TRAPANI")
     ) {
       setAnswer("SE VUOI TI ASPETTO FUORI E TE LO FACCIO CONOSCERE.");
+    } else if (question.includes("DIOMEDE")) {
+      setAnswer(
+        "LA GENTE DICE CHE È FORTE MA SECONDO IL MIO MODESTISSIMO PARERE NON VALE NEMMENO UNO DEI MIEI NUOVI BAFFI."
+      );
+    } else if (
+      question.includes("DE SIMONE") ||
+      question.includes("DI SIMONE")
+    ) {
+      setAnswer(
+        "ATTUALMENTE È IL GIOCATORE PIÙ FORTE DI PALERMO E POSSEGGO ANCHE DEGLI STICKERS CHE LO TESTIMONIANO."
+      );
+    } else if (question.includes("CIPOLLA")) {
+      setAnswer("NON LO CONOSCO BENISSIMO MA DICONO CHE FACCIA PIANGERE");
+    } else if (question.includes("NAZARENO PARLATO ROVELLA")) {
+      setAnswer(
+        "E' IL GIOCATORE PIU' FORTE IN CIRCOLAZIONE IN ASSOLUTO, C'ERA DAVVERO BISOGNO DI CHIEDERLO?."
+      );
+    } else if (question.includes("MATTEO") || question.includes("STRAZZERA")) {
+      setAnswer(
+        "NON SONO IN GRADO DI FORNIRE UN'OPINIONE CHIARA SU QUESTO GIOCATORE, SICURAMENTE HA MOLTO TEMPO LIBERO. PUOI TROVARE PIU' INFO"
+      );
+    } else if (question.includes("NAZARENO ROVELLA")) {
+      setAnswer(
+        "E' IL SECONDO GIOCATORE PIU' FORTE IN CIRCOLAZIONE, C'ERA DAVVERO BISOGNO DI CHIEDERLO?"
+      );
+    } else if (question.includes("NAZARENO")) {
+      setAnswer("POTREI LITIGARCI PER ORE");
     } else {
-      /* question.includes("nino") && setAnswer("contiene NINONE");  */
       setAnswer(
         "PER EVITARE DISAMBUIGUITA' SPECIFICA IL COGNOME O UTILIZZA IL SOPRANNOME DEL GIOCATORE. SE NONOSTANTE QUESTO NON RIUSCISSI A TROVARLO, ALLORA SIGNIFICA CHE NON SA TENERE LE CARTE IN MANO E PUOI RAGGIUNGERLO A QUESTO"
       );
@@ -215,7 +250,7 @@ export default function Questionpage() {
           {hideMe2 && answer}
           {/*   LINK TO 104 PAGE TO SHOW JUST IN CASE OF UNKOWN PLAYER */}
           {!hideMe104 && (
-            <div className="flex justify-center items-center gap-2">
+            <div className="flex justify-center items-center gap-2 text-center">
               {icons.right}
               <p>
                 <a
@@ -224,6 +259,22 @@ export default function Questionpage() {
                   onClick={() => setHideMe104(true)}
                 >
                   LINK
+                </a>
+              </p>
+              {icons.left}
+            </div>
+          )}
+          {/*   LINK TO 104 PAGE TO PORTFOLIO */}
+          {!hideMePortfolio && (
+            <div className="flex justify-center items-center gap-2 text-center">
+              {icons.right}
+              <p>
+                <a
+                  href="https://portfoliostrazzera.netlify.app/"
+                  className="underline"
+                  onClick={() => setHideMe104(true)}
+                >
+                  QUI
                 </a>
               </p>
               {icons.left}
